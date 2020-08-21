@@ -9,6 +9,7 @@ import store from './store'
 Vue.config.productionTip = false
 Vue.mixin({
   methods: {
+    //Используется в компонентах добавляет и меняет массив с делами
     addNoteInput() {
       if(!this.noteInput.trim()) {
         return

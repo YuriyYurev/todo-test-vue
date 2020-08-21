@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div 
+    <div
       class="wrap__item" 
       v-for="(listItem, i) of getList" 
       :key="listItem.id"

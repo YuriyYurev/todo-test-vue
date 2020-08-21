@@ -18,7 +18,7 @@
               type="text"
             >
             <i class="material-icons" @click="clearNoteInput(i)">clear</i>
-            <button 
+            <button
               :class="{'completed-color': input.completed}" 
               @click.prevent="input.completed = !input.completed"
             >

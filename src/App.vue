@@ -14,6 +14,7 @@ export default {
     }
   },
   computed: {
+    // Отображение заголовка в зависимости от страницы
     getAppTitle() {
       return this.$route.meta.query === 'note' ? this.appTitle = 'Редактировать заметку' : 'Список заметок'
     },
