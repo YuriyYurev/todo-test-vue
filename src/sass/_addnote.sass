@@ -1,0 +1,70 @@
+input[name="name"], .modal-add__note > input
+  border: none
+  border-bottom: 2px solid rgba(255, 109, 0, .4)
+  transition: all .1s linear
+input[name="name"]:focus, .modal-add__note > input:focus
+  border-bottom: 2px solid rgb(255, 109, 0)
+input
+  &[name="name"]
+    font-weight: bold
+    font-size: 20px
+    padding: 10px 20px
+    margin-bottom: 20px
+  &[type="submit"]
+    cursor: pointer
+    text-transform: uppercase
+    font-weight: bold
+    padding: 15px 0
+    border-radius: 5px
+    border: none
+    font-weight: bold
+    border: none
+    color: white
+    background-color: rgb(255, 109, 0)
+    transition: all .1s linear
+    &:hover
+      background-color: lighten(rgb(255, 109, 0), 10%)
+.modal-add__note 
+  display: flex
+  align-items: baseline
+  width: 100%
+  & input
+    width: 100%
+    font-size: 15px
+    padding: 5px 20px
+    margin: 0 10px 10px 0
+  & i
+    cursor: pointer
+    padding: 10px
+    background: 
+    font-size: 20px
+    background: rgba(255, 109, 0, .05)
+    transition: all .2s linear
+    &:hover
+      background: rgba(255, 109, 0, .4)
+ul
+  max-height: 170px
+  overflow: auto
+  width: 100%
+  list-style: none
+  padding: 0
+  flex: 1 0 auto
+  & li
+    background: rgba(255, 109, 0, .05)
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 14px
+    padding: 5px 20px
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 15px
+    & i
+      cursor: pointer
+      background: transparent
+      border-radius: 50px
+      padding: 7px
+      transition: all .2s linear
+      &:hover
+        background: rgba(255, 109, 0, .4)

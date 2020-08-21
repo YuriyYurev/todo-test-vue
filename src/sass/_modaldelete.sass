@@ -1,0 +1,55 @@
+.delete
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.4)
+  &__item
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 500px
+    width: 100%
+    background: white
+    min-height: 150px
+    padding: 10px 15px
+    border-radius: 5px
+  &__title
+    color: white
+    padding: 10px 10px
+    margin: -10px -15px
+    background-color: rgb(255, 109, 0)
+    font-size: 20px
+    font-weight: bold
+    display: flex
+    align-items: center
+    justify-content: space-between
+    & i
+      font-size: 40px
+      cursor: pointer
+      transition: all .2s linear 
+      &:hover
+        color: black
+  &__btns
+    display: flex
+    width: 100%
+    & button
+      margin-right: 10px
+      font-size: 20px
+      font-weight: bold
+      background-color: rgb(255, 109, 0)
+      transition: all .2s linear
+      text-transform: uppercase
+      border: none
+      margin-bottom: 20px
+      padding: 10px 0
+      width: 100%
+      &:last-child
+        margin-left: 10px
+      &:hover 
+        background-color: rgba(255, 109, 0, .9)

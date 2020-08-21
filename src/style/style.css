@@ -1,0 +1,281 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+input {
+  outline: none;
+}
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+.completed {
+  text-decoration: line-through;
+}
+input:disabled {
+  text-decoration: line-through;
+  background-color: rgba(253, 216, 9, 0.05) !important;
+  border: 1px dashed #ff6d00 !important
+}
+.not-found {
+  font-size: 45px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6d00;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  margin: 0 -15px;
+  padding: 0 15px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+}
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-top: 20px;
+}
+#app {
+  position: relative;
+  height: 100vh;
+}
+.modal-add {
+  position: fixed;
+  background-color: rgba(0, 0, 0, .4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-add form {
+  overflow: hidden;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: white;
+  height: 420px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-add__title {
+  color: white;
+  background-color: rgb(255, 109, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 109, 0, 0.1);
+  margin: 0 -20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.modal-add__title > i {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.modal-add__title > i:hover {
+  color: black;
+}
+.modal__close {
+  cursor: pointer;
+  font-size: 40px;
+}
+.wrap__item {
+  position: relative;
+  background: rgba(255, 109, 0, .02);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+  margin: 15px;
+  width: 340px;
+  padding: 0 10px;
+  height: 250px;
+  overflow: auto;
+}
+.todo__title {
+  max-width: 270px;
+  overflow: auto;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin: 1px -10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.todo__list {
+  list-style: none;
+}
+.todo__list li {
+  padding: 10px 0;
+  line-height: 20px;
+  border-bottom: 1px solid lightgrey
+}
+.todo__icons i:hover {
+  color: rgb(82, 82, 82)
+}
+.todo__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.todo__icons i {
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 5px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.add {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.add:hover {
+  background-color: #ff6d00;
+}
+.add:hover > .add__icon {
+  color: white;
+}
+.add__icon {
+  font-size: 60px;
+}
+.note {
+  padding: 0 15px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+.note__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+.note__title i, .note__todo-item i {
+  font-size: 30px;
+  padding: 10px;
+}
+.note__todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  
+}
+.note__todo-item i {
+  cursor: pointer;
+  background-color: rgba(255, 109, 0, 0.1);
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+.note__todo-item i:hover {
+  background-color: rgba(255, 109, 0, 0.5);
+}
+.completed-color {
+  background-color: black !important;
+}
+.completed-color:hover {
+  background-color: rgba(0, 0, 0, .7) !important;
+}
+.note__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+button {
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+.note__btns button, .note__close {
+  background-color: rgba(255, 109, 0, 1);
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  border: none;
+  width: 100%;
+}
+.note__btns button {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.note__btns button:first-child {
+  margin-right: 10px;
+}
+.note__close {
+  padding: 15px 0;
+}
+.note__btns button:hover, .note__close:hover {
+  background-color: rgba(255, 109, 0, 0.9);
+}
